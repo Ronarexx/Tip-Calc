@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-size: 1.6rem;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  height: 100vh;
+  align-items: center;
+}
+
+.container img {
+  width: 6rem;
+  height: 3.5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.showcase {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 60%;
+  height: 24rem;
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+}
+
+.showcase .calculator {
+  width: 50%;
+  padding: 0.5rem 2.5rem 1rem 0;
+}
+.calculator > * {
+  margin-bottom: 1.5rem;
+}
+
+.bill_input,
+.People {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+.label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  height: 2.5rem;
+  text-align: end;
+  border: none;
+  padding-right: 1rem;
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 1.3rem 1rem;
+  background-size: 10px;
+  font-size: 24px;
+}
+
+input[type="tel"] {
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+input:hover {
+  outline: 3px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+
+.People .space {
+  display: flex;
+  border: 3px solid red;
+  justify-content: space-between;
+}
+
+.People .msg {
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: red;
+  /* display: none; */
+}
+
+.tip_buttons {
+  display: grid;
+
+  grid-template: repeat(2, 2.5rem) / repeat(3, minmax(22%, 1fr));
+  gap: 1rem 1rem;
+}
+.select_tip button {
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.tip_buttons .active {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.tip_buttons input {
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  text-align: end;
+  border: none;
+  height: 3.5rem;
+  background-image: none;
+  padding-right: 1rem;
+  font-size: 24px;
+}
+.tip_buttons input::placeholder {
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.tip_buttons input:hover {
+  outline: 3px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+
+.showcase .result {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result .Per_person {
+  margin-top: 0.3rem;
+}
+
+.result .tip {
+  margin-bottom: 1.5rem;
+}
+.result .tip,
+.result .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.result .tip .text,
+.result .total .text {
+  display: flex;
+  flex-direction: column;
+  color: hsl(185, 41%, 84%);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.result .tip .text .inner_text,
+.result .total .text .inner_text {
+  opacity: 0.5;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.figure {
+  font-size: 36px;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset {
+  border: none;
+  border-radius: 5px;
+  height: 2.7rem;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  font-weight: 700;
+  background-color: hsl(172, 67%, 45%);
+}
+
+.reset:hover {
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+}
