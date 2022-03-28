@@ -100,7 +100,7 @@ input:hover {
   letter-spacing: 0.1rem;
   font-weight: 700;
   color: red;
-  /* display: none; */
+  display: none;
 }
 
 .tip_buttons {
